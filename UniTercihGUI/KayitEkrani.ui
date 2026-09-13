@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KayitEkrani</class>
+ <widget class="QDialog" name="KayitEkrani">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>595</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>KayitEkrani</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- GENEL PENCERE AYARLARI --- */
+/* Buradaki QDialog yerine pencerenin objectName'i varsa onu da yazabilirsin */
+QDialog {
+    /* EĞER ELİNDE ARKA PLAN RESMİ VARSA AŞAĞIDAKİ SATIRI KULLAN: */
+    /* background-image: url(:/resimler/arkaplan.png); */
+    /* background-position: center; */
+    
+    /* RESİM YOKSA BENZER BİR PASTEL GEÇİŞ İÇİN BUNU KULLAN: */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 #E0F7FA,  /* Açık mavi */
+                                stop:0.5 #F3E5F5, /* Açık lila */
+                                stop:1 #FFF3E0); /* Açık turuncu */
+}
+
+/* --- YAZI KUTULARI (QLineEdit) --- */
+QLineEdit {
+    /* Hafif şeffaf beyaz arka plan (Glassmorphism etkisi) */
+    background-color: rgba(255, 255, 255, 180); 
+    border: 1px solid rgba(255, 255, 255, 0); /* Kenarlığı gizle ya da çok silik yap */
+    border-radius: 15px; /* Kenarları yuvarlat */
+    padding: 8px 15px;   /* İçeriden boşluk bırak, yazı yapışmasın */
+    font-size: 14px;
+    color: #555555;      /* Yazı rengi koyu gri */
+    selection-background-color: #a6d4fa;
+}
+
+/* Kutuya tıklayınca (Focus) */
+QLineEdit:focus {
+    background-color: rgba(255, 255, 255, 230);
+    border: 1px solid #b39ddb; /* Tıklanınca hafif mor bir kenarlık */
+}
+
+/* --- BUTONLAR (QPushButton) --- */
+QPushButton {
+    /* 2. resimdeki 'ekle' butonu gibi pembe/lila tonu */
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f8bbd0, stop:1 #f48fb1);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px; /* Butonları da yuvarlat */
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+}
+
+/* Butonun üzerine gelince */
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f48fb1, stop:1 #ec407a);
+}
+
+/* Butona basınca */
+QPushButton:pressed {
+    padding-top: 12px; /* Basılma hissi için yazıyı az aşağı kaydır */
+    padding-left: 21px;
+}
+
+/* --- ETİKETLER (QLabel - Eğer varsa) --- */
+QLabel {
+    color: #4a4a4a;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent; /* Arka planı şeffaf olsun ki resim görünsün */
+}
+
+QLabel#lblBaslik {
+    color: #6a1b9a; /* Diğer butonlarla uyumlu koyu bir mor/lila tonu */
+    font-family: &quot;Segoe UI&quot;, sans-serif; /* Modern yazı tipi */
+    font-size: 28px; /* Yazı boyutu büyük olsun */
+    font-weight: bold; /* Kalın yazı */
+    background-color: transparent; /* Arka plan şeffaf kalsın */
+    margin-bottom: 10px; /* Alttaki kutularla arasına biraz mesafe koyar */
+}
+
+/* İsteğe bağlı: Mouse üzerine gelince hafif parlasın istersen */
+QLabel#lblBaslik:hover {
+    color: #8e24aa; 
+}
+</string>
+  </property>
+  <widget class="QLineEdit" name="txtYeniTC">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* --- GENEL PENCERE AYARLARI --- */
+/* Buradaki QDialog yerine pencerenin objectName'i varsa onu da yazabilirsin */
+QDialog {
+    /* EĞER ELİNDE ARKA PLAN RESMİ VARSA AŞAĞIDAKİ SATIRI KULLAN: */
+    /* background-image: url(:/resimler/arkaplan.png); */
+    /* background-position: center; */
+    
+    /* RESİM YOKSA BENZER BİR PASTEL GEÇİŞ İÇİN BUNU KULLAN: */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 #E0F7FA,  /* Açık mavi */
+                                stop:0.5 #F3E5F5, /* Açık lila */
+                                stop:1 #FFF3E0); /* Açık turuncu */
+}
+
+/* --- YAZI KUTULARI (QLineEdit) --- */
+QLineEdit {
+    /* Hafif şeffaf beyaz arka plan (Glassmorphism etkisi) */
+    background-color: rgba(255, 255, 255, 180); 
+    border: 1px solid rgba(255, 255, 255, 0); /* Kenarlığı gizle ya da çok silik yap */
+    border-radius: 15px; /* Kenarları yuvarlat */
+    padding: 8px 15px;   /* İçeriden boşluk bırak, yazı yapışmasın */
+    font-size: 14px;
+    color: #555555;      /* Yazı rengi koyu gri */
+    selection-background-color: #a6d4fa;
+}
+
+/* Kutuya tıklayınca (Focus) */
+QLineEdit:focus {
+    background-color: rgba(255, 255, 255, 230);
+    border: 1px solid #b39ddb; /* Tıklanınca hafif mor bir kenarlık */
+}
+
+/* --- BUTONLAR (QPushButton) --- */
+QPushButton {
+    /* 2. resimdeki 'ekle' butonu gibi pembe/lila tonu */
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f8bbd0, stop:1 #f48fb1);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px; /* Butonları da yuvarlat */
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+}
+
+/* Butonun üzerine gelince */
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f48fb1, stop:1 #ec407a);
+}
+
+/* Butona basınca */
+QPushButton:pressed {
+    padding-top: 12px; /* Basılma hissi için yazıyı az aşağı kaydır */
+    padding-left: 21px;
+}
+
+/* --- ETİKETLER (QLabel - Eğer varsa) --- */
+QLabel {
+    color: #4a4a4a;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent; /* Arka planı şeffaf olsun ki resim görünsün */
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>TC Giriniz..</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtYeniAd">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>140</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>İsim Giriniz...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtYeniSifre">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>190</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Şifre Giriniz...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTamamla">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>270</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kaydı Tamamla</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBaslik">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>401</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aramıza Katıl...</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

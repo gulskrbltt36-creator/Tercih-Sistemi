@@ -1,0 +1,39 @@
+﻿   Qt/MSBuild: 3.4.1.0
+   Qt: 6.5.3
+  KayitEkrani.cpp
+  UniTercihGUI.cpp
+  GirisEkrani.cpp
+  main.cpp
+\Desktop\UniTercihGUI.cpp(1,1): error C1083: kaynak dosyası açılamıyor: '..\..\..\..\Desktop\UniTercihGUI.cpp': No such file or directory
+  ('/Desktop/UniTercihGUI.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\University.h(1,1): warning C4828: Dosyada 0x106 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\IDList.h(1,1): warning C4828: Dosyada 0x1fc konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\IDList.h(1,1): warning C4828: Dosyada 0x1fd konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\IDList.h(1,1): warning C4828: Dosyada 0x203 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\IDList.h(1,1): warning C4828: Dosyada 0x207 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\IDList.h(1,1): warning C4828: Dosyada 0x4fd konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\PRIORITYQUEUE_H.h(1,1): warning C4828: Dosyada 0x201 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\PRIORITYQUEUE_H.h(1,1): warning C4828: Dosyada 0x204 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\PRIORITYQUEUE_H.h(1,1): warning C4828: Dosyada 0x216 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  
+C:\Users\GÜLSÜM KARABULUT\Desktop\Üni TERCİH SİSTEMİ\UniTercihGUI\PRIORITYQUEUE_H.h(1,1): warning C4828: Dosyada 0x229 konumundan başlayan bir karakter, geçerli kaynak karakter kümesinde (kod sayfası 65001) geçersiz.
+  ('main.cpp' kaynak dosyası derleniyor)
+  

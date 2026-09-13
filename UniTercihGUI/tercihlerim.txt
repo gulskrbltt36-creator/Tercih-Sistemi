@@ -1,0 +1,6 @@
+154 Ardahan Universitesi Bilgisayar Muh.
+150 Yozgat Bozok Bilgisayar Muh.
+141 Pamukkale Universitesi Bilgisayar Muh.
+162 Cankaya Universitesi Bilgisayar Muh.
+109 Yildiz Teknik Universitesi Bilgisayar Muh.
+158 Yeditepe Universitesi Bilgisayar Muh.

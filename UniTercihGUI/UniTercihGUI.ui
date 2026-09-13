@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UniTercihGUIClass</class>
+ <widget class="QMainWindow" name="UniTercihGUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1260</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UniTercihGUI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* === 1. ARKA PLAN RESMİ === */
+QWidget#centralWidget {
+    /* Senin ayarladığın yol burası */
+    border-image: url(:/UniTercihGUI/images/background.jpg) 0 0 0 0 stretch stretch;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* === 2. BUZLU CAM PANELLER (SOL VE SAĞ KUTULAR) === */
+QFrame#solPanel, QFrame#sagPanel {
+    /* Yarı saydam beyaz renk */
+    background-color: rgba(255, 255, 255, 170); 
+    border-radius: 20px; /* Köşeleri yuvarlat */
+    border: 1px solid rgba(255, 255, 255, 120); /* Hafif beyaz çizgi */
+}
+
+/* === 3. SOLDAKİ LİSTE GÖRÜNÜMÜ === */
+QListWidget {
+    background-color: transparent; /* Listenin kendi arkası şeffaf olsun */
+    border: none;
+    outline: none;
+}
+QListWidget::item {
+    color: #444;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 10px;
+}
+QListWidget::item:hover {
+    background-color: rgba(255, 255, 255, 200); /* Üzerine gelince parlasın */
+}
+QListWidget::item:selected {
+    /* Seçilince Mavi-Turkuaz olsun */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a1c4fd, stop:1 #c2e9fb);
+    color: white;
+}
+
+/* === 4. NORMAL BUTONLAR (Temizle, Ekle vb.) === */
+
+QPushButton {
+    background-color: rgba(255, 255, 255, 0.3); /* Yarı saydam beyaz */
+    color: #333333; /* Yazı rengi koyu gri (okunabilirlik için) */
+    border: 2px solid #ffffff; /* Kalın beyaz çerçeve */
+    border-radius: 15px; /* Yuvarlak köşeler */
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Üzerine gelince biraz daha beyazlaşır */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.1); /* Tıklanınca şeffaflaşır */
+}
+
+/* === 5. SİHİRLİ BÜYÜK BUTON === */
+QPushButton#sihirliButon {
+    /* Mavi-Yeşilimsi özel renk */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8fd3f4, stop:1 #84fab0);
+    border-radius: 30px; /* Tam yuvarlak */
+    font-size: 16px;
+    padding: 15px 40px;
+    border: 2px solid rgba(255,255,255, 0.7);
+}
+QPushButton#sihirliButon:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a0e0ff, stop:1 #9dfbc0);
+    margin-top: -2px; /* Hafif yukarı zıplama efekti */
+}
+
+/* === 6. YAZI KUTULARI (Inputlar) === */
+QLineEdit, QComboBox {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    color: #444;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="lstTercihler">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>256</width>
+      <height>661</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtArama">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>20</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="IstSonuclar">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>50</y>
+      <width>301</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAsagi">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>v</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnYukari">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtChat">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>600</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Sirala ,temizle, yaz....</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderSimulasyon">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>340</y>
+      <width>211</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSimulasyon">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>350</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBarRisk">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>191</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRapor">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>260</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rapor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEkle">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>260</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ekle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnKiyasla">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>460</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>İKİ BÖLÜMÜ KIYASLA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAI">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>540</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AI</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>10</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sıralamanız</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtSiralama">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>50000</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSil">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>173</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SİL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGeriAl">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>130</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GERİ AL</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1260</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="UniTercihGUI.qrc"/>
+ </resources>
+ <connections/>
+</ui>

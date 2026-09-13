@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GirisEkraniClass</class>
+ <widget class="QDialog" name="GirisEkraniClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GirisEkrani</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- GENEL PENCERE --- */
+QDialog {
+    /* Kayıt ekranıyla aynı pastel geçiş */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 #E0F7FA, 
+                                stop:0.5 #F3E5F5, 
+                                stop:1 #FFF3E0);
+}
+
+/* --- YAZI KUTULARI (Kullanıcı Adı ve Şifre) --- */
+QLineEdit {
+    background-color: rgba(255, 255, 255, 180); 
+    border: 1px solid rgba(255, 255, 255, 0); 
+    border-radius: 15px; 
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #555555;
+}
+
+QLineEdit:focus {
+    background-color: rgba(255, 255, 255, 230);
+    border: 1px solid #b39ddb; /* Odaklanınca mor kenarlık */
+}
+
+/* Placeholder (Silik Yazı) Rengi */
+QLineEdit::placeholder {
+    color: rgba(80, 80, 80, 150);
+    font-style: italic;
+}
+
+/* --- BUTONLAR (Giriş Yap ve Kayıt Ol) --- */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f8bbd0, stop:1 #f48fb1);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                                      stop:0 #f48fb1, stop:1 #ec407a);
+}
+
+QPushButton:pressed {
+    padding-top: 12px;
+    padding-left: 21px;
+}
+
+/* --- BAŞLIK ETİKETİ (Sadece lblBaslik isimliler için) --- */
+QLabel#lblBaslik {
+    color: #6a1b9a; /* Diğer butonlarla uyumlu koyu bir mor/lila tonu */
+    font-family: &quot;Segoe UI&quot;, sans-serif; /* Modern yazı tipi */
+    font-size: 28px; /* Yazı boyutu büyük olsun */
+    font-weight: bold; /* Kalın yazı */
+    background-color: transparent; /* Arka plan şeffaf kalsın */
+    margin-bottom: 10px; /* Alttaki kutularla arasına biraz mesafe koyar */
+}
+
+/* İsteğe bağlı: Mouse üzerine gelince hafif parlasın istersen */
+QLabel#lblBaslik:hover {
+    color: #8e24aa; 
+}</string>
+  </property>
+  <widget class="QLineEdit" name="txtKullanici">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>130</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Kullancı Adı..</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtSifre">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Şifre..</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGiris">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>240</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Giriş Yap</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnKayitOl">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>290</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Kayıt Ol</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBaslik">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HOŞ GELDİNİZ...</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

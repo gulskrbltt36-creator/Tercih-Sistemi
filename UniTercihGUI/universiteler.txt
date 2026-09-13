@@ -1,0 +1,104 @@
+101#Bogazici Universitesi#Bilgisayar Muh.#550.5#150#85#140#1
+102#Koc Universitesi#Tip Fakultesi#548.0#200#60#190#1
+103#Orta Dogu Teknik Universitesi#Bilgisayar Muh.#545.2#800#120#750#1
+104#Istanbul Teknik Universitesi#Yapay Zeka Muh.#542.1#1200#50#1100#1
+105#Bilkent Universitesi#Elektrik Elektronik#540.0#1500#90#1400#1
+106#Hacettepe Universitesi#Tip Fakultesi#538.5#2500#220#2400#1
+107#Galatasaray Universitesi#Hukuk Fakultesi#535.0#3000#40#2900#1
+108#Cerrahpasa Tip#Tip Fakultesi#532.0#4000#250#3900#1
+109#Yildiz Teknik Universitesi#Bilgisayar Muh.#528.0#6500#110#6200#1
+110#Ankara Universitesi#Tip Fakultesi#525.5#7500#300#7200#1
+111#Ege Universitesi#Tip Fakultesi#522.0#9000#350#8800#1
+112#Gazi Universitesi#Tip Fakultesi#520.0#10500#300#10000#1
+113#Dokuz Eylul Universitesi#Tip Fakultesi#518.0#12000#200#11500#1
+114#Marmara Universitesi#Tip Fakultesi#517.5#12500#180#12000#1
+115#ITU#Mimarlik#515.0#15000#150#14500#1
+116#Gebze Teknik Universitesi#Bilgisayar Muh.#512.0#18000#90#17500#2
+117#Akdeniz Universitesi#Tip Fakultesi#510.0#20000#220#19500#1
+118#Eskisehir Osmangazi#Tip Fakultesi#508.0#22000#180#21000#2
+119#Ankara Universitesi#Hukuk Fakultesi#505.0#25000#400#24000#1
+120#Bursa Uludag Universitesi#Tip Fakultesi#502.0#28000#250#27000#1
+121#Kocaeli Universitesi#Tip Fakultesi#500.0#30000#200#29000#2
+122#Istanbul Universitesi#Hukuk Fakultesi#498.0#35000#500#34000#1
+123#Ozyegin Universitesi#Psikoloji#495.0#38000#60#37000#1
+124#IYTE#Bilgisayar Muh.#492.0#42000#90#41000#1
+125#Marmara Universitesi#Hukuk Fakultesi#490.0#45000#350#44000#1
+126#Cukurova Universitesi#Tip Fakultesi#488.0#48000#250#47000#2
+127#Ondokuz Mayis Universitesi#Tip Fakultesi#485.0#52000#240#51000#2
+128#Mersin Universitesi#Tip Fakultesi#482.0#55000#180#54000#2
+129#Selcuk Universitesi#Tip Fakultesi#480.0#58000#200#57000#2
+130#Gaziantep Universitesi#Tip Fakultesi#478.0#62000#250#61000#2
+131#Erciyes Universitesi#Tip Fakultesi#475.0#65000#250#64000#2
+132#Dokuz Eylul#Hukuk Fakultesi#472.0#70000#300#69000#1
+133#Anadolu Universitesi#Hukuk Fakultesi#470.0#75000#200#74000#2
+134#Sakarya Universitesi#Bilgisayar Muh.#468.0#80000#100#79000#2
+135#Kocaeli Universitesi#Bilgisayar Muh.#465.0#85000#110#84000#2
+136#Manisa Celal Bayar#Bilgisayar Muh.#462.0#90000#90#89000#3
+137#Cukurova Universitesi#Bilgisayar Muh.#460.0#95000#100#94000#2
+138#Erciyes Universitesi#Bilgisayar Muh.#458.0#100000#100#99000#2
+139#Mersin Universitesi#Bilgisayar Muh.#455.0#105000#90#104000#2
+140#Karadeniz Teknik#Bilgisayar Muh.#452.0#110000#100#109000#2
+141#Pamukkale Universitesi#Bilgisayar Muh.#450.0#115000#90#114000#2
+142#Selcuk Universitesi#Bilgisayar Muh.#448.0#120000#100#119000#2
+143#Suleyman Demirel#Bilgisayar Muh.#445.0#125000#100#124000#3
+144#Firat Universitesi#Yazilim Muh.#442.0#130000#80#129000#3
+145#Dumlupinar Universitesi#Bilgisayar Muh.#440.0#140000#90#139000#3
+146#Ataturk Universitesi#Bilgisayar Muh.#438.0#150000#100#149000#3
+147#Inonu Universitesi#Bilgisayar Muh.#435.0#160000#90#159000#3
+148#Van Yuzuncu Yil#Tip Fakultesi#432.0#170000#150#169000#3
+149#Sivas Cumhuriyet#Bilgisayar Muh.#430.0#180000#100#179000#3
+150#Yozgat Bozok#Bilgisayar Muh.#425.0#200000#80#199000#3
+151#Kars Kafkas#Tip Fakultesi#420.0#220000#100#219000#3
+152#Hakkari Universitesi#Bilgisayar Muh.#410.0#250000#60#249000#3
+153#Sirnak Universitesi#Bilgisayar Muh.#405.0#280000#50#279000#3
+154#Ardahan Universitesi#Bilgisayar Muh.#400.0#300000#40#299000#3
+155#Istanbul Medipol#Dis Hekimligi#480.0#35000#100#34000#1
+156#Bezmialem Vakif#Tip Fakultesi#510.0#15000#80#14000#1
+157#Baskent Universitesi#Hukuk Fakultesi#460.0#80000#150#79000#1
+158#Yeditepe Universitesi#Bilgisayar Muh.#490.0#40000#100#39000#1
+159#Bahcesehir Uni#Yazilim Muh.#485.0#50000#120#49000#1
+160#Istanbul Bilgi#Psikoloji#450.0#100000#90#99000#1
+161#Karatay Universitesi#Hukuk Fakultesi#430.0#120000#80#110000#2
+162#Cankaya Universitesi#Bilgisayar Muh.#520.0#10000#70#9000#1
+163#TOBB ETU#Yapay Zeka Muh.#541.0#1300#40#1200#1
+164#MEF Universitesi#Hukuk Fakultesi#470.0#60000#100#59000#1
+165#Kadir Has#Y netim Bilisim#460.0#85000#60#80000#1
+166#Izmir Ekonomi#Yazilim Muh.#488.0#45000#90#44000#1
+167#Yasar Universitesi#Bilgisayar Muh.#455.0#95000#80#90000#1
+168#TED Universitesi#Mimarlik#440.0#130000#50#120000#1
+169#Atilim Universitesi#Pilotaj#510.0#25000#30#24000#1
+170#Okan Universitesi#Dis Hekimligi#430.0#50000#90#49000#1
+171#Eskisehir Universitesi#Pilotaj#431.0#50000#90#48000#1
+172#Adana Alparslan Turkes#Yazilim Muhendisligi#451.169#101.109#120.046#3
+173#manisa celal bayar#pilotaj#83#1233#6#1222#1
+174#Trakya Universitesi#Ziraat Muh.#410.5#185000#90#180000#2
+175#Balikesir Universitesi#Gida Muh.#415.0#175000#100#170000#2
+176#Kastamonu Universitesi#Orman Muh.#402.0#210000#80#205000#3
+177#Aksaray Universitesi#Makine Muh.#425.0#160000#120#155000#3
+178#Bartin Universitesi#Insaat Muh.#418.0#170000#110#165000#3
+179#Nevsehir Haci Bektas#Turizm Isletmeciligi#390.0#260000#60#255000#3
+180#Sinop Universitesi#Deniz Ulastirma#405.0#200000#70#195000#3
+181#Bolu Abant Izzet Baysal#Beslenme ve Diyetetik#455.0#90000#80#88000#2
+182#Karabuk Universitesi#Rayli Sistemler Muh.#430.0#145000#100#140000#3
+183#Kirikkale Universitesi#Kimya Muh.#440.0#130000#90#125000#3
+184#Tokat Gaziosmanpasa#Veterinerlik#465.0#85000#75#83000#2
+185#Rize Recep Tayyip Erdogan#Su Urunleri Muh.#395.0#240000#60#235000#3
+186#Gumushane Universitesi#Harita Muh.#400.0#225000#50#220000#3
+187#Igdir Universitesi#Elektrik Muh.#410.0#190000#90#185000#3
+188#Mus Alparslan#Insaat Muh.#398.0#230000#100#225000#3
+189#Bitlis Eren Universitesi#Makine Muh.#392.0#245000#80#240000#3
+190#Siirt Universitesi#Bilgisayar Teknolojileri#420.0#165000#90#160000#3
+191#Bayburt Universitesi#Enerji Sistemleri Muh.#388.0#270000#60#265000#3
+192#Yalova Universitesi#Endustri Muh.#470.0#78000#100#76000#2
+193#Kilis 7 Aralik#Uluslararasi Iliskiler#360.0#320000#70#315000#3
+194#Duzce Universitesi#Otomotiv Muh.#445.0#115000#80#112000#2
+195#Bingol Universitesi#Elektrik Elektronik#405.0#205000#90#200000#3
+196#Artvin Coruh#Peyzaj Mimarligi#385.0#280000#60#275000#3
+197#Agri Ibrahim Cecen#Cevre Muh.#390.0#260000#80#255000#3
+198#Usak Universitesi#Tekstil Muh.#430.0#140000#100#135000#2
+199#Nigde Omer Halisdemir#Metalurji Muh.#425.0#150000#90#145000#3
+200#Kirsehir Ahi Evran#Is Sagligi ve Guvenligi#450.0#100000#70#98000#3
+201#Yozgat Bozok#Gida Teknolojisi#370.0#300000#60#295000#3
+202#Samsun Universitesi#Ucak Muh.#480.0#55000#60#53000#2
+203#Ordu Universitesi#Fizyoterapi#460.0#85000#80#83000#2
+
